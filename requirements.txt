@@ -1,5 +1,7 @@
 joblib
+libomp
 matplotlib 
 numpy 
 pandas  
 scikit-learn
+xgboost
