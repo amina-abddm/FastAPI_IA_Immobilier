@@ -1,7 +1,9 @@
+fastapi
 joblib
 libomp
 matplotlib 
 numpy 
-pandas  
+pandas
+pydantic  
 scikit-learn
 xgboost
