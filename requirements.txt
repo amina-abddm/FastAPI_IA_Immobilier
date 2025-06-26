@@ -6,4 +6,5 @@ numpy
 pandas
 pydantic  
 scikit-learn
+uvicorn
 xgboost
