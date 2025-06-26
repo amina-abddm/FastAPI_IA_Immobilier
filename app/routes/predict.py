@@ -37,4 +37,20 @@ def predict(data: InputData):
 
 
 
+@router.post("/predict/bordeaux")
+def predict(data: InputData):
+    
+    model = models["appart"] if data.type_local == "Appartement" else models["maison"]
+    df = prepare_data(data)
+    
+    try:
+         # Effectuer la prédiction à partir du DataFrame préparé
+        prediction = model.predict(df)[0]
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f" Erreur lors de la prédiction : {e}")
 
+    return {
+        "prix_m2_estime": round(prediction, 2),
+        "model": get_model_name(model)
+    }

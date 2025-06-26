@@ -2,7 +2,6 @@
 
 import joblib
 import os
-import pandas as pd
 from ..schemas.inputs import InputData
 
 
@@ -23,4 +22,5 @@ def get_which_models():
         "appart": (model_dt_gs_apparts ),
         "maison": (model_dt_gs_maisons)
     }
-print(f"Modèles utilisés : 🏢 {get_which_models()['appart'].class.name} | 🏡 {get_which_models()['maison'].class.name}")
+
+print(f"Modèles utilisés : 🏢 {model_dt_gs_apparts.__class__.__name__} | 🏡 {model_dt_gs_maisons.__class__.__name__}")

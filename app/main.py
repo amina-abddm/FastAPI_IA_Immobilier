@@ -2,15 +2,14 @@
 # Pour lancer l'application : ouvrir terminal puis uvicorn app.main:app --reload
 
 from fastapi.responses import HTMLResponse
-from .models.loader import get_models
+from .models.loader import get_which_models
 
-models = get_models()
+models = get_which_models()
 appart_model = models["appart"]
 maison_model = models["maison"]
 
 # ✅ Vérification manuelle
 print("📦 Modèles chargés avec succès !")
-
 
 
 from fastapi import FastAPI
