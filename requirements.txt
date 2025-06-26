@@ -4,6 +4,7 @@ libomp
 matplotlib 
 numpy 
 pandas
+pytest
 pydantic  
 scikit-learn
 uvicorn

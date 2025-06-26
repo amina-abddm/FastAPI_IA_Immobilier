@@ -98,7 +98,7 @@ FastAPI_IA_Immobilier/
 ### 1. Cloner le dépôt
 
 ````bash
-git clone https://github.com/amina-abddm/FastAPI_Github.git
+git clone https://github.com/amina-abddm/FastAPI_IA_Immobilier.git
 cd FastAPI_Github
 ````
 
