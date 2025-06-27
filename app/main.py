@@ -2,9 +2,9 @@
 # Pour lancer l'application : ouvrir terminal puis uvicorn app.main:app --reload
 
 from fastapi.responses import HTMLResponse
-from .models.loader import get_which_models
+from .models.loader import load_model
 
-models = get_which_models()
+models = load_model()
 appart_model = models["appart"]
 maison_model = models["maison"]
 
@@ -13,7 +13,7 @@ print("📦 Modèles chargés avec succès !")
 
 
 from fastapi import FastAPI
-from app.routes import predict
+from .routes import predict
 
 app = FastAPI(title="API de Prédiction Immobilière 🏡🏘️",
     description="Estimez le prix au m² pour Lille et Bordeaux avec des modèles pré-entraînés.",
