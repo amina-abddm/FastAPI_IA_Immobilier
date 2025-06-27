@@ -10,7 +10,7 @@ print(f"📁 Chemin des modèles : {MODEL_DIR}")
 
 # Chargement des modèles de régression (entraînés sur Lille)
 
-model_dt_gs_apparts = joblib.load(os.path.join(MODEL_DIR, "random_forest_gridsearchcv_apparts_Lille.pkl"))
+model_dt_gs_apparts = joblib.load(os.path.join(MODEL_DIR, "xgboost_apparts_Lille.pkl"))
 model_dt_gs_maisons = joblib.load(os.path.join(MODEL_DIR, "decision_tree_gridsearchcv_maisons_Lille.pkl"))
 
 # ✅ Vérification manuelle du chargement 

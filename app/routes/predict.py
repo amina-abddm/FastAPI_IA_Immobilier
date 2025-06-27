@@ -15,6 +15,7 @@ def model_name(model):
 
 @router.post("/")
 def predict(data: PredictionInput):
+    
     # ✅ Encodage du type_local et sélection du modèle
     if data.type_local == "Appartement":
         model = models["appart"]
