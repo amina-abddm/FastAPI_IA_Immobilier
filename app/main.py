@@ -29,8 +29,5 @@ def read_root():
     <h1> 🏡 Bienvenue sur l'API de prédiction immobilière </h1>
     <p>Utilisez <a href='/docs'>/docs</a> pour explorer l'API.</p>
     <ul>
-        <li><strong>POST</strong> /predict/lille</li>
-        <li><strong>POST</strong> /predict/bordeaux</li>
-        <li><strong>POST</strong> /predict (choix dynamique)</li>
-    </ul>
+            
     """
